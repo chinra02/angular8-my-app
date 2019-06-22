@@ -48,6 +48,7 @@ module.exports = {
     })
   ]
 };
+
 This requires us to install the moment-locales-webpack-plugin:
 
 $ npm i moment-locales-webpack-plugin -D
