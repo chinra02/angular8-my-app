@@ -78,4 +78,16 @@ We can then update this inside of serve/builder in the angular.json file:
   "builder": "@angular-builders/custom-webpack:dev-server"
 }
 
+## Github deployment
+
+First install the angular-cli-ghpages globally:
+
+$ npm install -g angular-cli-ghpages
+Now use the Angular CLI with the --base-href flag to build your project and set the correct base href location:
+
+$ ng build --prod --base-href "https://<user-name>.github.io/<repo>/"
+Then it’s as simple as running angular-cli-ghpages. You can use the ngh shorthand:
+
+$ ngh
+
 
